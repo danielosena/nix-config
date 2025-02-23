@@ -7,7 +7,6 @@ let
   # 1. Declare the Flatpaks you *want* on your system
   desiredFlatpaks = [
     "org.mozilla.firefox"
-    "org.dupot.easyflatpak"
     "org.libreoffice.LibreOffice"
     "io.github.flattool.Warehouse"
     "com.github.tchx84.Flatseal"
@@ -21,8 +20,6 @@ let
     "org.zotero.Zotero"
     "com.zettlr.Zettlr"
     "org.ferdium.Ferdium"
-    "net.davidotek.pupgui2"
-    "org.freedesktop.Platform.VulkanLayer.MangoHud"
     "page.tesk.Refine"
     "org.localsend.localsend_app"
     "dev.qwery.AddWater"
@@ -32,8 +29,6 @@ let
     "com.heroicgameslauncher.hgl"
     "com.valvesoftware.Steam"
     "io.github.Foldex.AdwSteamGtk"
-    "org.freedesktop.Platform.VulkanLayer.gamescope"
-    "net.davidotek.pupgui2"
     "com.usebottles.bottles"
     "ru.linux_gaming.PortProton"
     "com.vysp3r.ProtonPlus"

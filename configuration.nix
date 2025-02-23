@@ -123,6 +123,10 @@
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   xdg.portal.config.common.default = "gtk";
 
+  virtualisation.waydroid.enable = true;
+
+
+
   # Área de gaming
   programs.gamemode.enable = true;
 
@@ -136,12 +140,14 @@
     gtop
     git
     gnome-tweaks
-    waydroid
     game-devices-udev-rules
     neovim
     masterpdfeditor4
+    gamescope
+    mangohud
     pop-launcher
     devenv
+    multipass
     gnomeExtensions.blur-my-shell
     gnomeExtensions.pop-shell
     gnomeExtensions.dash2dock-lite
