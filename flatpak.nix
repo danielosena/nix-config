@@ -24,7 +24,6 @@ let
     "org.localsend.localsend_app"
     "dev.qwery.AddWater"
     "net.lutris.Lutris"
-    "io.github.vikdevelop.SaveDesktop"
     "dev.vencord.Vesktop"
     "com.heroicgameslauncher.hgl"
     "com.valvesoftware.Steam"
@@ -32,6 +31,7 @@ let
     "com.usebottles.bottles"
     "ru.linux_gaming.PortProton"
     "com.vysp3r.ProtonPlus"
+    "re.sonny.Eloquent"
   ];
 in
 {
