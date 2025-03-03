@@ -154,6 +154,7 @@
     gnomeExtensions.gsconnect
     gnomeExtensions.rounded-window-corners-reborn
     gnomeExtensions.tray-icons-reloaded
+    mono
   ];
 
   # Enable OpenGL

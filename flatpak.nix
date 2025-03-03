@@ -32,6 +32,7 @@ let
     "ru.linux_gaming.PortProton"
     "com.vysp3r.ProtonPlus"
     "re.sonny.Eloquent"
+    "de.haeckerfelix.Fragments"
   ];
 in
 {
