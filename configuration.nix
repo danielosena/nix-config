@@ -88,6 +88,9 @@
     #media-session.enable = true;
   };
 
+  # Tailscale
+  services.tailscale.enable = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
@@ -125,6 +128,10 @@
 
   virtualisation.waydroid.enable = true;
 
+  virtualisation.podman = {
+  enable = true;
+  dockerCompat = true;
+  };
 
 
   # Área de gaming
@@ -155,6 +162,7 @@
     gnomeExtensions.rounded-window-corners-reborn
     gnomeExtensions.tray-icons-reloaded
     mono
+    distrobox
   ];
 
   # Enable OpenGL

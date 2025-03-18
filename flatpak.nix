@@ -33,7 +33,7 @@ let
     "com.vysp3r.ProtonPlus"
     "re.sonny.Eloquent"
     "de.haeckerfelix.Fragments"
-    "io.github.trigg.discover_overlay"
+    "io.github.dvlv.boxbuddyrs"
     "org.freedesktop.Platform.VulkanLayer.MangoHud"
     "org.freedesktop.Platform.VulkanLayer.gamescope"
     "com.valvesoftware.Steam.CompatibilityTool.Proton-GE"
