@@ -11,7 +11,6 @@ let
     "io.github.flattool.Warehouse"
     "com.github.tchx84.Flatseal"
     "io.github.giantpinkrobots.flatsweep"
-    "it.mijorus.gearlever"
     "net.codelogistics.webapps"
     "com.jeffser.Alpaca"
     "info.febvre.Komikku"
@@ -37,6 +36,12 @@ let
     "org.freedesktop.Platform.VulkanLayer.MangoHud"
     "org.freedesktop.Platform.VulkanLayer.gamescope"
     "com.valvesoftware.Steam.CompatibilityTool.Proton-GE"
+    "net.codelogistics.webapps"
+    "org.gnome.gitlab.somas.Apostrophe"
+    "io.gitlab.news_flash.NewsFlash"
+    "io.gitlab.gregorni.Letterpress"
+    "io.github.vikdevelop.SaveDesktop"
+    "com.github.johnfactotum.Foliate"
   ];
 in
 {
