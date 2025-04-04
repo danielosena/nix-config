@@ -163,7 +163,7 @@
     gnomeExtensions.tray-icons-reloaded
     mono
     distrobox
-    appimage-run
+    tailscale
   ];
 
   # Enable OpenGL

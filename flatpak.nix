@@ -28,7 +28,6 @@ let
     "com.valvesoftware.Steam"
     "io.github.Foldex.AdwSteamGtk"
     "com.usebottles.bottles"
-    "ru.linux_gaming.PortProton"
     "com.vysp3r.ProtonPlus"
     "re.sonny.Eloquent"
     "de.haeckerfelix.Fragments"
@@ -42,6 +41,9 @@ let
     "io.gitlab.gregorni.Letterpress"
     "io.github.vikdevelop.SaveDesktop"
     "com.github.johnfactotum.Foliate"
+    "io.github.ciromattia.kcc"
+    "de.schmidhuberj.tubefeeder"
+    "org.fedoraproject.MediaWriter"
   ];
 in
 {
