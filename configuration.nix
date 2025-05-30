@@ -53,7 +53,59 @@
   
   # Enable GNOME Desktop
   services.xserver.desktopManager.gnome.enable = true;
-  services.xserver.displayManager.gdm.enable = true;                                                      
+  services.xserver.displayManager.gdm.enable = true;
+  # Excluding GNOME Applications
+  environment.gnome.excludePackages = with pkgs; [
+    # orca
+    # evince
+    # file-roller
+    geary
+    # gnome-disk-utility
+    # seahorse
+    # sushi
+    # sysprof
+    #
+    # gnome-shell-extensions
+    #
+    # adwaita-icon-theme
+    # nixos-background-info
+    # gnome-backgrounds
+    # gnome-bluetooth
+    # gnome-color-manager
+    # gnome-control-center
+    # gnome-shell-extensions
+    # gnome-tour # GNOME Shell detects the .desktop file on first log-in.
+    # gnome-user-docs
+    # glib # for gsettings program
+    # gnome-menus
+    # gtk3.out # for gtk-launch program
+    # xdg-user-dirs # Update user dirs as described in https://freedesktop.org/wiki/Software/xdg-user-dirs/
+    # xdg-user-dirs-gtk # Used to create the default bookmarks
+    #
+    # baobab
+    epiphany
+    # gnome-text-editor
+    # gnome-calculator
+    # gnome-calendar
+    # gnome-characters
+    # gnome-clocks
+    # gnome-console
+    # gnome-contacts
+    # gnome-font-viewer
+    # gnome-logs
+    # gnome-maps
+    # gnome-music
+    # gnome-system-monitor
+    # gnome-weather
+    # loupe
+    # nautilus
+    # gnome-connections
+    # simple-scan
+    # snapshot
+    # totem
+    # yelp
+    gnome-software
+  ];
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -98,7 +150,7 @@
   users.users.daniel = {
     isNormalUser = true;
     description = "Daniel Bastos";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "podman" ];
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -131,8 +183,10 @@
   virtualisation.podman = {
   enable = true;
   dockerCompat = true;
+  defaultNetwork.settings.dns_enabled = true;
   };
 
+  programs.appimage.binfmt = true;
 
   # Área de gaming
   programs.gamemode.enable = true;
@@ -150,20 +204,21 @@
     game-devices-udev-rules
     neovim
     masterpdfeditor4
-    gamescope
-    mangohud
     pop-launcher
     devenv
     multipass
     gnomeExtensions.blur-my-shell
     gnomeExtensions.pop-shell
-    gnomeExtensions.dash2dock-lite
     gnomeExtensions.gsconnect
     gnomeExtensions.rounded-window-corners-reborn
     gnomeExtensions.tray-icons-reloaded
+    gnomeExtensions.dock-from-dash
     mono
     distrobox
     tailscale
+    zenity
+    p7zip
+    cudaPackages.cudatoolkit
   ];
 
   # Enable OpenGL
@@ -196,6 +251,6 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "24.11"; # Did you read the comment?
+  system.stateVersion = "25.05"; # Did you read the comment?
 
 }
