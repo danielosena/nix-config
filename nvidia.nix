@@ -3,7 +3,7 @@
 {
 
 # REFER TO THE DOCS HERE!!! https://nixos.wiki/wiki/Nvidia
-
+  # boot.kernelParams = [ "module_blacklist=i915" ];
   # Load nvidia driver for Xorg and Wayland
   services.xserver.videoDrivers = ["nvidia"];
 
